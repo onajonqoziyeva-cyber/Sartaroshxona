@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Batafsil va Xizmatlar - Kallavoy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Yuqori qism / Navigatsiya -->
+    <header>
+        <h1>Kallavoy Sartaroshxonasi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="batafsil.html">Batafsil & Xizmatlar</a></li>
+                <li><a href="aloqa.html">Aloqa va Navbat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Asosiy qism -->
+    <main>
+        <section>
+            <h2>Xizmatlar narxlari jadvali</h2>
+            <p>Bizning sartaroshxonada ko'rsatiladigan asosiy xizmat turlari va ularning narxlari bilan tanishing:</p>
+
+            <!-- Talab qilingan jadval: 5 qator, 3 ustun, colspan va rowspan bilan -->
+            <table border="1" cellpadding="10" cellspacing="0" style="width:100%; border-collapse: collapse; margin-top: 20px;">
+                <caption><strong>Sartaroshxona narxlar ro'yxati</strong></caption>
+                <thead>
+                    <tr style="background-color: #1f2933; color: white;">
+                        <th>T/r</th>
+                        <th>Xizmat nomi</th>
+                        <th>Narxi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Soch olish (Kattalar uchun)</td>
+                        <td>40 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Soqol olish va tartibga keltirish</td>
+                        <td>25 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <!-- rowspan misoli (2 qatorni birlashtiradi) -->
+                        <td rowspan="2">3</td>
+                        <td>Kompleks xizmat: Soch + Soqol</td>
+                        <td>60 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <td>Bolalar soch olishi (7 yoshgacha)</td>
+                        <td>30 000 so'm</td>
+                    </tr>
+                    <tr>
+                        <!-- colspan misoli (2 ustunni birlashtiradi) -->
+                        <td colspan="2" style="text-align: right;"><strong>Maxsus chegirmali umumiy paket:</strong></td>
+                        <td><strong>80 000 so'm</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section style="margin-top: 30px;">
+            <h2>Bizning ustalar</h2>
+            <article class="karta">
+                <h3>Jasur usta</h3>
+                <p>5 yillik tajribaga ega, zamonaviy va klassik bichimdagi soch turmaklari mutaxassisi.</p>
+            </article>
+            <article class="karta">
+                <h3>Bobur usta</h3>
+                <p>Bolalar va o'smirlar uchun trenddagi sportcha uslubdagi turmaklar ustasi.</p>
+            </article>
+        </section>
+    </main>
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Aloqa va Navbat - Kallavoy</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Yuqori qism / Navigatsiya -->
+    <header>
+        <h1>Kallavoy Sartaroshxonasi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="batafsil.html">Batafsil & Xizmatlar</a></li>
+                <li><a href="aloqa.html">Aloqa va Navbat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Asosiy qism -->
+    <main>
+        <section>
+            <h2>Navbatga yozilish formasi</h2>
+            <p>Iltimos, ma'lumotlaringizni to'liq kiriting:</p>
+
+            <form action="#" method="post" class="forma-quti">
+                
+                <!-- 1. Ism (text, required) -->
+                <div class="forma-guruh">
+                    <label for="ism">Ismingiz va familiyangiz:</label>
+                    <input type="text" id="ism" name="ism" placeholder="Masalan: Ali Valiyev" required>
+                </div>
+
+                <!-- 2. Telefon (tel, pattern, required) -->
+                <div class="forma-guruh">
+                    <label for="telefon">Telefon raqamingiz (+998XXXXXXXXX):</label>
+                    <input type="tel" id="telefon" name="telefon" placeholder="+998901234567" pattern="\+998[0-9]{9}" required>
+                </div>
+
+                <!-- 3. Email (email) -->
+                <div class="forma-guruh">
+                    <label for="email">Elektron pochta (ixtiyoriy):</label>
+                    <input type="email" id="email" name="email" placeholder="misol@gmail.com">
+                </div>
+
+                <!-- 4. Xizmat turi (select) -->
+                <div class="forma-guruh">
+                    <label for="xizmat">Xizmat turini tanlang:</label>
+                    <select id="xizmat" name="xizmat">
+                        <option value="soch">Soch olish</option>
+                        <option value="soqol">Soqol olish</option>
+                        <option value="kompleks">Soch + Soqol (Kompleks)</option>
+                        <option value="bolalar">Bolalar soch olishi</option>
+                    </select>
+                </div>
+
+                <!-- 5. Usta (radio guruh fieldset/legend bilan) -->
+                <fieldset class="forma-guruh">
+                    <legend>Ustani tanlang:</legend>
+                    <label><input type="radio" name="usta" value="jasur" checked> Jasur usta</label>
+                    <label><input type="radio" name="usta" value="bobur"> Bobur usta</label>
+                    <label><input type="radio" name="usta" value="istalgan"> Farqi yo'q (Istalgan usta)</label>
+                </fieldset>
+
+                <!-- 6. Sana (date, required) -->
+                <div class="forma-guruh">
+                    <label for="sana">Tashrif sanasi:</label>
+                    <input type="date" id="sana" name="sana" required>
+                </div>
+
+                <!-- 7. Vaqt (time) -->
+                <div class="forma-guruh">
+                    <label for="vaqt">Tashrif vaqti:</label>
+                    <input type="time" id="vaqt" name="vaqt">
+                </div>
+
+                <!-- 8. Izoh (textarea) -->
+                <div class="forma-guruh">
+                    <label for="izoh">Qo'shimcha istaklaringiz:</label>
+                    <textarea id="izoh" name="izoh" rows="4" placeholder="Uslub yoki boshqa takliflar..."></textarea>
+                </div>
+
+                <!-- 9. Qoidalar (checkbox) -->
+                <div class="forma-guruh">
+                    <label>
+                        <input type="checkbox" name="qoidalar" required> Qoidalarga roziman
+                    </label>
+                </div>
+
+                <!-- Yuborish tugmasi -->
+                <button type="submit" class="tugma">Yozilishni tasdiqlash</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
