@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Navbatga yozilish - Kallavoy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Kallavoy</h1>
+        <nav>
+            <a href="index.html">Bosh sahifa</a>
+            <a href="index.html#xizmatlar">Xizmatlar</a>
+            <a href="index.html#ish-vaqti">Ish vaqti</a>
+            <a href="navbat.html">Navbatga yozilish</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Navbatga yozilish</h2>
+            <p>Ma'lumotlarni to'ldiring, biz siz bilan bog'lanamiz.</p>
+
+            <form>
+                <label for="ism">Ismingiz</label>
+                <input type="text" id="ism" placeholder="Masalan: Ali">
+
+                <label for="telefon">Telefon raqamingiz</label>
+                <input type="tel" id="telefon" placeholder="+998 99 123 45 67">
+
+                <label for="xizmat">Xizmat turi</label>
+                <select id="xizmat">
+                    <option>Soch olish</option>
+                    <option>Soqol olish</option>
+                    <option>Soch + soqol</option>
+                    <option>Bolalar soch olishi</option>
+                </select>
+
+                <label for="usta">Usta</label>
+                <select id="usta">
+                    <option>Istalgan usta</option>
+                    <option>Jasur</option>
+                    <option>Bobur</option>
+                    <option>Sardor</option>
+                    <option>Akmal</option>
+                    <option>Muhammadali</option>
+                </select>
+
+                <label for="sana">Sana</label>
+                <input type="date" id="sana">
+
+                <label for="vaqt">Vaqt</label>
+                <input type="time" id="vaqt">
+
+
+                <button type="submit" class="tugma">Yozilish</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
